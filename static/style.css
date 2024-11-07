@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+}
+
+.game-mode {
+    margin-bottom: 1.5rem;
+}
+
+.game-mode button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-mode button.active {
+    background: #2196f3;
+    color: white;
+}
+
+.status {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 300px;
+    height: 300px;
+}
+
+.cell {
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background: #e9ecef;
+}
+
+.cell.x {
+    color: #2196f3;
+}
+
+.cell.o {
+    color: #f44336;
+}
+
+.reset-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background: #43a047;
+}
